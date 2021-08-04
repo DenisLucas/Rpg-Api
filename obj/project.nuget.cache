@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vkZ0lCp8V7ASmidAv7rZrqF+6Zoxz2kcJ9vhhrlDRlKFAMBSXoAkPdXmRwHqN0s4uN1ITtvuxk5vxwdbLyBM0A==",
+  "dgSpecHash": "YjrsU20+n4rSbfOovAgT7Ll+J0749kc9IFvvSlZ2EtuCkWMkPfngfJGYZ7sqZux2QWynBpQLFfyrQx7x1aPO7g==",
   "success": true,
   "projectFilePath": "/home/denis/Downloads/webAPI/RpgApi/RpgApi.csproj",
   "expectedPackageFiles": [
     "/home/denis/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/home/denis/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
+    "/home/denis/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/9.0.0/mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "/home/denis/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/denis/.nuget/packages/microsoft.data.sqlclient/2.0.1/microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "/home/denis/.nuget/packages/microsoft.data.sqlclient.sni.runtime/2.0.1/microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

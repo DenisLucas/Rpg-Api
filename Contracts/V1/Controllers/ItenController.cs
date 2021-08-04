@@ -1,10 +1,9 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using RpgApi.Contracts.V1;
 using RpgApi.Contracts.V1.Request;
 using RpgApi.Data.V1;
 
-namespace RpgApi.Controllers
+namespace RpgApi.Contracts.V1.Controllers
 {
     [ApiController]
     public class ItenController : ControllerBase
@@ -21,7 +20,9 @@ namespace RpgApi.Controllers
             var result = await _ItenServices.CreateIten(request);
             if (result)
             {
-                return Ok();
+                var BaseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
+                var locationuri = BaseUrl + "/" + ApiRoutes.Player.Get.Replace("{id}",request.id.ToString());
+                return Created(locationuri,request);
             }
             return BadRequest();
         }

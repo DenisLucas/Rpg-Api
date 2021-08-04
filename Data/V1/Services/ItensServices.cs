@@ -18,6 +18,7 @@ namespace RpgApi.Data.V1.Services
         {
             var _Itens = new Itens
             {
+                id = request.id,
                 Nome = request.Nome,
                 Descrição = request.Descrição,
                 Magico = request.Magico,

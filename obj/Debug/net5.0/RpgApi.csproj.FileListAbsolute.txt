@@ -59,3 +59,5 @@
 /home/denis/Downloads/webAPI/RpgApi/obj/Debug/net5.0/ref/RpgApi.dll
 /home/denis/Downloads/webAPI/RpgApi/obj/Debug/net5.0/RpgApi.pdb
 /home/denis/Downloads/webAPI/RpgApi/obj/Debug/net5.0/RpgApi.genruntimeconfig.cache
+/home/denis/Downloads/webAPI/RpgApi/bin/Debug/net5.0/MediatR.dll
+/home/denis/Downloads/webAPI/RpgApi/bin/Debug/net5.0/MediatR.Extensions.Microsoft.DependencyInjection.dll

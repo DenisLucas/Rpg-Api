@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
-using RpgApi.Contracts.V1.Request;
 using RpgApi.Contracts.V1.Response;
 using Microsoft.EntityFrameworkCore;
 using RpgApi.Domain.V1;
 using System.Linq;
+using RpgApi.Data.V1.Commands;
 
 namespace RpgApi.Data.V1.Services
 {
@@ -17,10 +17,11 @@ namespace RpgApi.Data.V1.Services
         }
         
 
-        public async Task<bool> CreatePlayer(PlayerCreateRequest request)
+        public async Task<bool> CreatePlayer(PlayerCreateCommand request)
         {
             var _player = new Player
             {
+                id = request.id,
                 Nome = request.Nome,
                 Hp = request.Hp,
                 Level = request.Level,

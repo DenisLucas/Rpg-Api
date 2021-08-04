@@ -1,6 +1,10 @@
-namespace RpgApi.Contracts.V1.Request
+using System;
+using MediatR;
+using RpgApi.Contracts.V1.Request;
+
+namespace RpgApi.Data.V1.Commands
 {
-    public class PlayerCreateRequest
+    public class PlayerCreateCommand : IRequest<PlayerCreateRequest>
     {
         public int id { get; set; }
         public string Nome { get; set; }

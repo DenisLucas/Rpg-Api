@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using RpgApi.Data;
 using RpgApi.Data.V1.Services;
 using RpgApi.Data.V1;
+using MediatR;
 
 namespace RpgApi
 {
@@ -35,14 +36,16 @@ namespace RpgApi
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
             
             services.AddTransient<InventarioServices>();
-            services.AddTransient<PlayerServices>();
+            services.AddTransient<PlayerServices>(); 
             services.AddTransient<ItensServices>();
             
             services.AddScoped<IInventoryServices, InventarioServices>();
             services.AddScoped<IItensServices, ItensServices>();
             services.AddScoped<IPlayerServices, PlayerServices>();
-
             services.AddControllers();
+            
+            services.AddMediatR(typeof(Startup));
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RpgApi", Version = "v1" });

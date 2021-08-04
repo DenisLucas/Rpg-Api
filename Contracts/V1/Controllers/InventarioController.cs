@@ -1,9 +1,8 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using RpgApi.Contracts.V1;
 using RpgApi.Data.V1;
 
-namespace RpgApi.Controllers
+namespace RpgApi.Contracts.V1.Controllers
 {
     [ApiController]
     public class InventarioController : ControllerBase
@@ -16,7 +15,7 @@ namespace RpgApi.Controllers
         }
 
          [HttpPost(ApiRoutes.Inventario.AddIten)]
-        public async Task<IActionResult> CreatePlayer(int itenId,int userId)
+        public async Task<IActionResult> CreateInventory(int itenId,int userId)
         {
             var result = await _InventarioServices.AddItens(itenId,userId);
             if (result)

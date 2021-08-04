@@ -10,6 +10,7 @@ namespace RpgApi.Contracts.V1
         {
             public const string CreatePlayer = Base  + "/CreatePlayer/";
             public const string GetPlayerId = Base  + "/GetPlayerId/{id}";
+            public const string Get = Base  + "/Get/{id}";
             public const string GetPlayerName = Base  + "/GetPlayerName/{name}";
             public const string GetPlayerFullById = Base  + "/GetPlayerFullById/{id}";
             public const string GetPlayerFullByName = Base  + "/GetPlayerFullByName/{name}";
@@ -21,6 +22,7 @@ namespace RpgApi.Contracts.V1
         public static class Itens
         {
             public const string CreateIten = Base  + "/CreateIten/";
+            public const string Get = Base  + "/Get/{id}";
             public const string GetItenId = Base  + "/GetItenId/{id}";
             public const string GetItenName = Base  + "/GetItenName/{name}";
             public const string UpdateItenById = Base  + "/UpdateItenId/{id}";
@@ -31,6 +33,7 @@ namespace RpgApi.Contracts.V1
 
         public static class Inventario
         {
+            public const string Get = Base  + "/Get/{id}";
             public const string AddIten = Base + "/AddIten/{itenId}/{userId}";
         }
     }
