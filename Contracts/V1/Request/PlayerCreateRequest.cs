@@ -2,7 +2,6 @@ namespace RpgApi.Contracts.V1.Request
 {
     public class PlayerCreateRequest
     {
-        public int id { get; set; }
         public string Nome { get; set; }
         public int Hp { get; set; }
         public int Level { get; set; }

@@ -44,7 +44,7 @@ namespace RpgApi
             services.AddScoped<IPlayerServices, PlayerServices>();
             services.AddControllers();
             
-            services.AddMediatR(typeof(Startup));
+            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
             
             services.AddSwaggerGen(c =>
             {

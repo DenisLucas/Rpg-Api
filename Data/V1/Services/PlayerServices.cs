@@ -21,7 +21,6 @@ namespace RpgApi.Data.V1.Services
         {
             var _player = new Player
             {
-                id = request.id,
                 Nome = request.Nome,
                 Hp = request.Hp,
                 Level = request.Level,

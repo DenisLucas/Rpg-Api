@@ -19,7 +19,6 @@ namespace RpgApi.Data.V1.Handlers.Player
         {
             await _PlayerServices.CreatePlayer(request);
             return  new PlayerCreateRequest{
-                id = request.id,
                 Nome = request.Nome,
                 Hp = request.Hp,
                 Level = request.Level,

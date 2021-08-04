@@ -6,7 +6,6 @@ namespace RpgApi.Data.V1.Commands
 {
     public class PlayerCreateCommand : IRequest<PlayerCreateRequest>
     {
-        public int id { get; set; }
         public string Nome { get; set; }
         public int Hp { get; set; }
         public int Level { get; set; }

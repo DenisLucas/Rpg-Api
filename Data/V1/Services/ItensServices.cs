@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using RpgApi.Contracts.V1.Request;
+using RpgApi.Data.V1.Commands.Itens;
 using RpgApi.Domain.V1;
 
 namespace RpgApi.Data.V1.Services
@@ -14,11 +15,10 @@ namespace RpgApi.Data.V1.Services
         }
         
 
-        public async Task<bool> CreateIten(ItensRequest request)
+        public async Task<bool> CreateIten(ItensCommand request)
         {
             var _Itens = new Itens
             {
-                id = request.id,
                 Nome = request.Nome,
                 Descrição = request.Descrição,
                 Magico = request.Magico,

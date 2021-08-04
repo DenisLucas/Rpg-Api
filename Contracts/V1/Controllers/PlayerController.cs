@@ -28,7 +28,7 @@ namespace RpgApi.Contracts.V1.Controllers
             if (command != null)
             {  
                 var BaseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host.ToUriComponent()}";
-                var locationuri = BaseUrl + "/" + ApiRoutes.Player.Get.Replace("{id}",request.id.ToString());
+                var locationuri = BaseUrl + "/" + ApiRoutes.Player.Get.Replace("{id}",request.Nome);
                 return Created(locationuri,command);
             }
             return BadRequest();

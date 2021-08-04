@@ -1,7 +1,10 @@
-namespace RpgApi.Contracts.V1.Request
+using MediatR;
+using RpgApi.Contracts.V1.Request;
+
+namespace RpgApi.Data.V1.Commands.Itens
 {
-    public class ItensRequest
-    {  
+    public class ItensCommand : IRequest<ItensRequest>
+    { 
         public string Nome { get; set; }
         public string Descrição { get; set; }
         public bool Magico { get; set; }
@@ -10,5 +13,4 @@ namespace RpgApi.Contracts.V1.Request
         public string Efeito { get; set; }
         public string DeusAfiliado { get; set; }
     }
-
 }
